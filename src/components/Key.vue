@@ -22,24 +22,12 @@ export default {
         mousedown() { this.down = true },
         mouseup() { this.down = false },
         click() {
-            switch(this.button.action) {
+            switch(this.button.action) {                
+                case 'function':
+                    this.$store.dispatch(this.button.function);
+                    break;
                 case 'digit':
                     this.$store.dispatch('appendDigit', {digit: this.button.symbol});
-                    break;
-                case 'clear':
-                case 'clearEntry':
-                case 'memoryPlus':
-                case 'memoryMinus':
-                case 'memoryRecall':
-                case 'sqrt':
-                case 'equal':
-                    this.$store.dispatch(this.button.action);
-                    break;
-                case 'decimal':
-                    this.$store.dispatch('appendDecimal');
-                    break;
-                case 'plusMinus':
-                    this.$store.dispatch('appendMinus');
                     break;
                 case 'operator':
                     this.$store.dispatch('operator', {operator: this.button.symbol});

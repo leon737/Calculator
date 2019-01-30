@@ -1,27 +1,32 @@
 [
     {
         "symbol": "C",
-        "action": "clear",
+        "action": "function",
+        "function": "clear",
         "color": "red"
     },
     {
         "symbol": "CE",
-        "action": "clearEntry",
+        "action": "function",
+        "function": "clearEntry",
         "color": "red"
     },
     {
         "symbol": "MRC",
-        "action": "memoryRecall",
+        "action": "function",
+        "function": "memoryRecall",
         "color": "blue"
     },
     {
         "symbol": "M-",
-        "action": "memoryMinus",
+        "action": "function",
+        "function": "memoryMinus",
         "color": "blue"
     },
     {
         "symbol": "M+",
-        "action": "memoryPlus",
+        "action": "function",
+        "function": "memoryPlus",
         "color": "blue"
     },
     {
@@ -42,7 +47,8 @@
     },
     {
         "symbol": "√",
-        "action": "sqrt"
+        "action": "function",
+        "function": "sqrt"
     },
     {
         "symbol": "4",
@@ -91,14 +97,17 @@
     },
     {
         "symbol": ".",
-        "action": "decimal"
+        "action": "function",
+        "function": "appendDecimal"
     },
     {
         "symbol": "+/-",
-        "action": "plusMinus"
+        "action": "function",
+        "function": "appendMinus"
     },
     {
         "symbol": "=",
-        "action": "equal"
+        "action": "function",
+        "function": "equal"
     }
 ]
