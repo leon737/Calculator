@@ -1,0 +1,104 @@
+[
+    {
+        "symbol": "C",
+        "action": "clear",
+        "color": "red"
+    },
+    {
+        "symbol": "CE",
+        "action": "clearEntry",
+        "color": "red"
+    },
+    {
+        "symbol": "MRC",
+        "action": "memoryRecall",
+        "color": "blue"
+    },
+    {
+        "symbol": "M-",
+        "action": "memoryMinus",
+        "color": "blue"
+    },
+    {
+        "symbol": "M+",
+        "action": "memoryPlus",
+        "color": "blue"
+    },
+    {
+        "symbol": "7",
+        "action": "digit"
+    },
+    {
+        "symbol": "8",
+        "action": "digit"
+    },
+    {
+        "symbol": "9",
+        "action": "digit"
+    },
+    {
+        "symbol": "%",
+        "action": "operator"
+    },
+    {
+        "symbol": "√",
+        "action": "sqrt"
+    },
+    {
+        "symbol": "4",
+        "action": "digit"
+    },
+    {
+        "symbol": "5",
+        "action": "digit"
+    },
+    {
+        "symbol": "6",
+        "action": "digit"
+    },
+    {
+        "symbol": "x",
+        "action": "operator"
+    },
+    {
+        "symbol": "÷",
+        "action": "operator"
+    },
+    {
+        "symbol": "1",
+        "action": "digit"
+    },
+    {
+        "symbol": "2",
+        "action": "digit"
+    },
+    {
+        "symbol": "3",
+        "action": "digit"
+    },
+    {
+        "symbol": "+",
+        "action": "operator",
+        "spanRows": 2
+    },
+    {
+        "symbol": "-",
+        "action": "operator"
+    },
+    {
+        "symbol": "0",
+        "action": "digit"
+    },
+    {
+        "symbol": ".",
+        "action": "decimal"
+    },
+    {
+        "symbol": "+/-",
+        "action": "plusMinus"
+    },
+    {
+        "symbol": "=",
+        "action": "equal"
+    }
+]
