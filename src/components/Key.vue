@@ -4,6 +4,7 @@
     </div>
 </template>
 <script>
+
 export default {
     data() {
         return {
@@ -37,46 +38,49 @@ export default {
     }
 }
 </script>
-<style scoped>
-    .button {
+
+<style lang="less" scoped>
+
+    @import './../styles/common.less';
+
+    .button { 
         cursor: pointer;
-        border: solid 1px #777;                
+        border: solid 1px @button-border-color;                
         margin: auto auto;
         vertical-align: middle;
-        line-height: 100px; 
-        width: 100px;
-        height: 100px;
-        font-size: 36px;
-        background-color: #aaa;
-        color: #fff;
+        line-height: @button-size; 
+        width: @button-size;
+        height: @button-size;
+        font-size: @button-font-size;
+        background-color: @button-background-color;
+        color: @button-text-color;
     }
 
     .button-2-rows {
         grid-row-end: span 2;
-        line-height: 200px; 
-        height: 200px;
+        line-height: @button-size * 2; 
+        height: @button-size * 2;
     }
 
-    .red {
-        background-color: #bd1f1f;
+     .red {
+        background-color: @button-red;
     }
 
     .blue {
-        background-color: #36369c;
+        background-color: @button-blue;
     }
 
     .red-down {
-        background-color: #831515;
+        background-color: darken(@button-red, 20%);
     }
 
     .blue-down {
-        background-color: #1d1d5a;
+        background-color: darken(@button-blue, 20%);
     }
 
     .gray-down {
-        background-color: #817f7f;
+        background-color: darken(@button-background-color, 20%);
     }
-
 </style>
 
 

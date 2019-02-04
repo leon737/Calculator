@@ -19,11 +19,14 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
+
+     @import './../styles/common.less';
+
     .keyboard {
         display: grid;
-        grid-template-rows: repeat(5, 100px);
-        grid-template-columns: repeat(5, 100px);
+        grid-template-rows: repeat(@button-rows, @button-size);
+        grid-template-columns: repeat(@button-columns, @button-size);
         user-select: none;
     }
 </style>

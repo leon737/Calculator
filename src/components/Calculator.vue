@@ -20,13 +20,16 @@ export default {
    } 
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
+
+    @import './../styles/common.less';
+
     .calculator {
         margin: 0 auto;
-        width: 501px;
-        height: 612px;
+        width: @button-size * @button-columns + 1;
+        height: @button-size * @button-rows + 112;
         background-color: light-gray;
-        border: 2px solid #777;
+        border: 2px solid @button-border-color;
         border-radius: 5px;
     }
 

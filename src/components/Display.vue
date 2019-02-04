@@ -19,14 +19,17 @@ export default {
     })
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
+
+     @import './../styles/common.less';
+
     .display {
-        background-color: #8489c2;
+        background-color: @display-background-color;
         padding: 25px;        
     }
 
     .memory {
-        font-size: 18px;
+        font-size: @display-memory-font-size;
         text-align: left;
         height: 5px;
         font-weight: bold;
@@ -34,7 +37,7 @@ export default {
 
     .number {        
         text-align: right;   
-        font-size: 48px;
+        font-size: @display-font-size;
     }
    
 </style>
